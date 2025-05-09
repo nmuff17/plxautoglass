@@ -1,0 +1,533 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+/* Home page background */
+.index {
+  background-image: url('images/IMG_9812.jpeg')
+}
+
+/* Services page background */
+.services {
+  background-color:#000000;
+}
+
+/* Content Wrapper Setup */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.sidebar .logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: #f31d06;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #fff;
+}
+
+/* Content Area Styles */
+.content-area {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 250px;
+  padding: 5px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home h2 {
+  color: #f31d06;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.5rem;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home {
+  font-size: 1.3rem;
+}
+
+.wide-bg-section {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 12px;
+}
+
+/* Services Section Styling */
+.services-section {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services-section h3 {
+  color: #f31d06;
+  font-size: 2.0rem;
+  margin-bottom: 10px;
+}
+
+.services-section h2 {
+  text-align: center;
+  color: #f31d06;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.service-block {
+  flex: 1 1 45%;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service-block h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.service-block img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-block p {
+  color: #ddd;
+  font-size: 1.5rem;
+}
+
+/* Services Section */
+.services {
+  padding: 5px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  color: #f31d06;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service {
+  background-color: rgba(0, 0, 0, .7);
+  padding: 5px;
+  border-radius: 8px;
+  width: 48%;
+}
+
+.service h3 {
+  color: #f31d06;
+  font-size: 1.8rem;
+  margin-bottom: 1px;
+}
+
+.service img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.service p {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.contact-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.method {
+  flex: 1 1 45%;
+  max-width: 250px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.method img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.method a {
+  color: #f31d06;
+  text-decoration: none;
+}
+
+.method a:hover {
+  text-decoration: underline;
+}
+
+.gallery-preview {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gallery-preview img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-preview img:hover {
+  transform: scale(1.03);
+}
+
+.gallery-preview p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #f31d06;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer .social-media a {
+  color: #f31d06;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+  touch-action: pan-y;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Responsive Overrides for All Pages */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .sidebar nav ul li {
+    margin: 0;
+  }
+
+  .content-area {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+}
+
+/* Phone-Specific Stacking for Services Only */
+@media (max-width: 480px) {
+  .services .services-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .services .service-block {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .services .service-block p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .sidebar nav ul li {
+    margin: 0;
+  }
+
+  .content-area {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .service-block img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 5px;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 1rem;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+  }
+
+  .service h3 {
+    font-size: 1.6rem;
+  }
+
+  .service p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Call-to-Action Section Styles */
+.cta-section {
+  background-color: #111;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.cta-section h2 {
+  color: #f31d06;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.cta-section a.cta-button {
+  background-color: #f31d06;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section a.cta-button:hover {
+  background-color: #c31404;
+}
+
+/* Mobile Carousel Enhancements (Contact Page) */
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .carousel-slide {
+    display: flex;
+    /* no explicit width – flex will grow as needed */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100%;       /* each image fills the carousel viewport */
+    flex: 0 0 100%;    /* prevents shrinking/growing – exactly one “slide” wide */
+    object-fit: cover;
+  }
+
+  .carousel-btn {
+    padding: 8px;
+    font-size: 1.2rem;
+  }
+}
